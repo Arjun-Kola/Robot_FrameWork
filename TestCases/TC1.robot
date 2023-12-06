@@ -8,6 +8,6 @@ Library  SeleniumLibrary
 LoginTest
     open browser    https://opensource-demo.orangehrmlive.com/      chrome
     maximize browser window
-    title should be
 
 *** Keywords ***
+

@@ -1,17 +1,17 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<robot generator="Robot 6.1.1 (Python 3.12.0 on win32)" generated="20231205 18:22:11.900" rpa="false" schemaversion="4">
-<suite id="s1" name="TC1" source="C:\Users\Arjun Srikar\Desktop\Learn_Automation\Robot_Framwork\TestCases\TC1.robot">
+<robot generator="Robot 6.1.1 (Python 3.12.0 on win32)" generated="20231205 21:36:15.646" rpa="false" schemaversion="4">
+<suite id="s1" name="TC1" source="C:\Users\Arjun Srikar\Desktop\Learn_Automation\Git_Cloned_Robot_Framework\Robot_FrameWork\TestCases\TC1.robot">
 <test id="s1-t1" name="LoginTest" line="8">
 <kw name="Open Browser" library="SeleniumLibrary">
 <arg>https://opensource-demo.orangehrmlive.com/</arg>
 <arg>chrome</arg>
 <doc>Opens a new browser instance to the optional ``url``.</doc>
-<msg timestamp="20231205 18:22:12.262" level="INFO">Opening browser 'chrome' to base url 'https://opensource-demo.orangehrmlive.com/'.</msg>
-<status status="PASS" starttime="20231205 18:22:12.262" endtime="20231205 18:22:27.263"/>
+<msg timestamp="20231205 21:36:16.117" level="INFO">Opening browser 'chrome' to base url 'https://opensource-demo.orangehrmlive.com/'.</msg>
+<status status="PASS" starttime="20231205 21:36:16.117" endtime="20231205 21:36:21.419"/>
 </kw>
-<status status="PASS" starttime="20231205 18:22:12.262" endtime="20231205 18:22:27.263"/>
+<status status="PASS" starttime="20231205 21:36:16.117" endtime="20231205 21:36:21.420"/>
 </test>
-<status status="PASS" starttime="20231205 18:22:11.900" endtime="20231205 18:22:27.264"/>
+<status status="PASS" starttime="20231205 21:36:15.646" endtime="20231205 21:36:21.421"/>
 </suite>
 <statistics>
 <total>
