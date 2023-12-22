@@ -1,92 +1,48 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<robot generator="Robot 6.1.1 (Python 3.12.0 on win32)" generated="20231206 15:43:17.842" rpa="false" schemaversion="4">
-<suite id="s1" name="Inputbox" source="C:\Users\Arjun Srikar\Desktop\Learn_Automation\Git_Cloned_Robot_Framework\Robot_FrameWork\TestCases\Inputbox.robot">
+<robot generator="Robot 6.1.1 (Python 3.12.0 on win32)" generated="20231207 13:47:16.067" rpa="false" schemaversion="4">
+<suite id="s1" name="Radiobuttons" source="C:\Users\Arjun Srikar\Desktop\Learn_Automation\Git_Cloned_Robot_Framework\Robot_FrameWork\TestCases\Radiobuttons.robot">
 <test id="s1-t1" name="TestingInputBox" line="9">
 <kw name="Open Browser" library="SeleniumLibrary">
 <arg>${url}</arg>
 <arg>${browser}</arg>
 <doc>Opens a new browser instance to the optional ``url``.</doc>
-<msg timestamp="20231206 15:43:18.254" level="INFO">Opening browser 'chrome' to base url 'https://opensource-demo.orangehrmlive.com/'.</msg>
-<status status="PASS" starttime="20231206 15:43:18.254" endtime="20231206 15:43:20.841"/>
+<msg timestamp="20231207 13:47:16.900" level="INFO">Opening browser 'chrome' to base url 'https://seleniumbase.io/demo_page'.</msg>
+<status status="PASS" starttime="20231207 13:47:16.900" endtime="20231207 13:47:21.353"/>
 </kw>
 <kw name="Maximize Browser Window" library="SeleniumLibrary">
 <doc>Maximizes current browser window.</doc>
-<status status="PASS" starttime="20231206 15:43:20.841" endtime="20231206 15:43:20.958"/>
+<status status="PASS" starttime="20231207 13:47:21.353" endtime="20231207 13:47:21.476"/>
 </kw>
 <kw name="Title Should Be" library="SeleniumLibrary">
-<arg>OrangeHRM</arg>
+<arg>Web Testing Page</arg>
 <doc>Verifies that the current page title equals ``title``.</doc>
-<msg timestamp="20231206 15:43:21.106" level="INFO" html="true">&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td colspan="3"&gt;&lt;a href="selenium-screenshot-4.png"&gt;&lt;img src="selenium-screenshot-4.png" width="800px"&gt;&lt;/a&gt;</msg>
-<msg timestamp="20231206 15:43:21.106" level="FAIL">Title should have been 'OrangeHRM' but was '502 Bad Gateway'.</msg>
-<status status="FAIL" starttime="20231206 15:43:20.958" endtime="20231206 15:43:21.113"/>
+<msg timestamp="20231207 13:47:21.489" level="INFO">Page title is 'Web Testing Page'.</msg>
+<status status="PASS" starttime="20231207 13:47:21.477" endtime="20231207 13:47:21.493"/>
 </kw>
 <kw name="Sleep" library="BuiltIn">
 <arg>5</arg>
 <doc>Pauses the test executed for the given time.</doc>
-<status status="NOT RUN" starttime="20231206 15:43:21.113" endtime="20231206 15:43:21.113"/>
+<msg timestamp="20231207 13:47:26.493" level="INFO">Slept 5 seconds</msg>
+<status status="PASS" starttime="20231207 13:47:21.493" endtime="20231207 13:47:26.493"/>
 </kw>
-<kw name="Click Link" library="SeleniumLibrary">
-<arg>xpath://a[text()='OrangeHRM, Inc']</arg>
-<doc>Clicks a link identified by ``locator``.</doc>
-<status status="NOT RUN" starttime="20231206 15:43:21.113" endtime="20231206 15:43:21.113"/>
+<kw name="Select Checkbox" library="SeleniumLibrary">
+<arg>checkBoxName1</arg>
+<doc>Selects the checkbox identified by ``locator``.</doc>
+<msg timestamp="20231207 13:47:26.496" level="INFO">Selecting checkbox 'checkBoxName1'.</msg>
+<status status="PASS" starttime="20231207 13:47:26.493" endtime="20231207 13:47:26.774"/>
 </kw>
-<kw name="Sleep" library="BuiltIn">
-<arg>5</arg>
-<doc>Pauses the test executed for the given time.</doc>
-<status status="NOT RUN" starttime="20231206 15:43:21.115" endtime="20231206 15:43:21.115"/>
-</kw>
-<kw name="Set Variable" library="BuiltIn">
-<var>${"EmailTextBox"}</var>
-<arg>xpath://*[@id="Form_submitForm_EmailHomePage"]</arg>
-<doc>Returns the given values which can then be assigned to a variables.</doc>
-<status status="NOT RUN" starttime="20231206 15:43:21.115" endtime="20231206 15:43:21.115"/>
-</kw>
-<kw name="Element Should Be Visible" library="SeleniumLibrary">
-<arg>${"EmailTextBox"}</arg>
-<doc>Verifies that the element identified by ``locator`` is visible.</doc>
-<status status="NOT RUN" starttime="20231206 15:43:21.115" endtime="20231206 15:43:21.115"/>
-</kw>
-<kw name="Element Should Be Enabled" library="SeleniumLibrary">
-<arg>${"EmailTextBox"}</arg>
-<doc>Verifies that element identified by ``locator`` is enabled.</doc>
-<status status="NOT RUN" starttime="20231206 15:43:21.115" endtime="20231206 15:43:21.115"/>
-</kw>
-<kw name="Input Text" library="SeleniumLibrary">
-<arg>${"EmailTextBox"} arjunsrikar@gmail.com</arg>
-<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
-<status status="NOT RUN" starttime="20231206 15:43:21.117" endtime="20231206 15:43:21.117"/>
-</kw>
-<kw name="Sleep" library="BuiltIn">
-<arg>5</arg>
-<doc>Pauses the test executed for the given time.</doc>
-<status status="NOT RUN" starttime="20231206 15:43:21.117" endtime="20231206 15:43:21.117"/>
-</kw>
-<kw name="Clear Element Text" library="SeleniumLibrary">
-<arg>${"EmailTextBox"}</arg>
-<doc>Clears the value of the text-input-element identified by ``locator``.</doc>
-<status status="NOT RUN" starttime="20231206 15:43:21.117" endtime="20231206 15:43:21.117"/>
-</kw>
-<kw name="Sleep" library="BuiltIn">
-<arg>3</arg>
-<doc>Pauses the test executed for the given time.</doc>
-<status status="NOT RUN" starttime="20231206 15:43:21.117" endtime="20231206 15:43:21.117"/>
-</kw>
-<kw name="Close Browser" library="SeleniumLibrary">
-<doc>Closes the current browser.</doc>
-<status status="NOT RUN" starttime="20231206 15:43:21.117" endtime="20231206 15:43:21.117"/>
-</kw>
-<status status="FAIL" starttime="20231206 15:43:18.253" endtime="20231206 15:43:21.117">Title should have been 'OrangeHRM' but was '502 Bad Gateway'.</status>
+<status status="PASS" starttime="20231207 13:47:16.900" endtime="20231207 13:47:26.774"/>
 </test>
-<status status="FAIL" starttime="20231206 15:43:17.842" endtime="20231206 15:43:21.119"/>
+<status status="PASS" starttime="20231207 13:47:16.067" endtime="20231207 13:47:26.776"/>
 </suite>
 <statistics>
 <total>
-<stat pass="0" fail="1" skip="0">All Tests</stat>
+<stat pass="1" fail="0" skip="0">All Tests</stat>
 </total>
 <tag>
 </tag>
 <suite>
-<stat pass="0" fail="1" skip="0" id="s1" name="Inputbox">Inputbox</stat>
+<stat pass="1" fail="0" skip="0" id="s1" name="Radiobuttons">Radiobuttons</stat>
 </suite>
 </statistics>
 <errors>
